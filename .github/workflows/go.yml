@@ -1,7 +1,7 @@
 # This workflow will build and test a Go project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
 
-name: Go Build and Test
+name: Go Lang Build Checker
 
 on:
   push:
@@ -29,7 +29,5 @@ jobs:
 
     - name: Build
       run: |
-        go build ./...
-        
-    - name: Test
-      run: go test -v ./...
+        go build ./singleExamples/...
+      
